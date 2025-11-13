@@ -6,11 +6,14 @@
 \section{Latar Belakang Masalah}
 %-----------------------------------------------------------------------------%
 
-Transformasi digital dalam pengelolaan sumber daya manusia (SDM) telah menjadi salah satu faktor utama dalam peningkatan efisiensi operasional perusahaan di era industri 4.0. Penerapan sistem informasi kepegawaian atau \textit{Human Resource Information System} (HRIS) memungkinkan proses administrasi dan pengambilan keputusan berbasis data dilakukan secara lebih cepat dan akurat \cite{moussa2020impact}. Digitalisasi fungsi SDM tidak hanya berdampak pada efisiensi kerja, tetapi juga mendorong peningkatan transparansi dan konsistensi data pegawai \cite{shiferaw2025digital}. 
+Transformasi digital dalam pengelolaan sumber daya manusia (SDM) telah menjadi salah satu faktor utama dalam peningkatan efisiensi operasional perusahaan di era industri 4.0. Penerapan sistem informasi kepegawaian atau \textit{Human Resource Information System} (HRIS) memungkinkan proses administrasi dan pengambilan keputusan berbasis data dilakukan secara lebih cepat dan akurat \cite{moussa2020impact}. Digitalisasi fungsi SDM tidak hanya berdampak pada efisiensi kerja, tetapi juga membuka potensi untuk peningkatan transparansi dan konsistensi data pegawai \cite{shiferaw2025digital}. 
+% \textbf{Namun, realisasi potensi ini sangat bergantung pada implementasi sistem yang terintegrasi dengan baik, karena tanpa manajemen yang tepat, digitalisasi justru dapat menciptakan silo data baru dan kerumitan dalam audit.}
 
-Salah satu aspek penting dari digitalisasi SDM adalah otomatisasi proses penggajian atau \textit{payroll automation}. Menurut penelitian oleh Onuotu dan Amaewhule (2024), penerapan sistem akuntansi terotomatisasi seperti Square Payroll dan QuickBooks Payroll secara signifikan meningkatkan efisiensi dan akurasi dalam persiapan penggajian di kalangan usaha kecil dan menengah, dengan pengurangan kesalahan hingga 50\% dan penurunan beban kerja manual hingga 90\% \cite{onuotu2024influence}. Hal ini menunjukkan bahwa integrasi sistem penggajian digital berperan penting dalam mempercepat proses administrasi serta memastikan keakuratan data kepegawaian di berbagai sektor industri.
+Salah satu aspek penting dari digitalisasi SDM adalah otomatisasi proses penggajian atau \textit{payroll automation}. Menurut penelitian oleh Onuotu dan Amaewhule (2024), penerapan sistem akuntansi terotomatisasi pada konteks usaha kecil dan menengah secara signifikan dapat meningkatkan efisiensi dan akurasi dalam persiapan penggajian, dengan mencatatkan pengurangan kesalahan perhitungan dan penurunan beban kerja manual \cite{onuotu2024influence}. Hal ini mengindikasikan bahwa, terutama dalam skenario transisi dari proses manual, integrasi sistem penggajian digital sangat efektif dalam mempercepat proses administrasi. Meskipun demikian, perlu dicatat bahwa otomatisasi \textit{payroll} berfokus pada akurasi perhitungan dan tidak serta merta menjamin validitas data masukan, menyoroti pentingnya keakuratan data sumber.
 
-\lipsum[1]
+Lebih lanjut, menurut Meenugu (2025), evolusi sistem penggajian dari proses manual menuju otomatisasi cerdas tidak hanya meningkatkan efisiensi dan akurasi, tetapi juga memperkuat kepatuhan terhadap regulasi \cite{meenugu2025payroll}. Meskipun demikian, masih banyak sistem penggajian yang berjalan secara terpisah dari modul HRIS utama, sehingga menimbulkan inefisiensi akibat kebutuhan untuk memasukkan data secara berulang dari sistem lain seperti absensi dan manajemen cuti. Kondisi ini kembali membuka peluang terjadinya kesalahan manusia dan menghambat efektivitas kerja. Oleh karena itu, diperlukan integrasi yang mulus antara pengelolaan data pegawai dan proses penggajian dalam satu platform terpadu.
+
+Fokus digitalisasi SDM kemudian meluas pada modul manajemen waktu dan lembur (\textit{Overtime Request and Management}). Secara tradisional, proses pengajuan dan perhitungan lembur yang bersifat manual rentan terhadap kesalahan pencatatan waktu dan berpotensi menimbulkan perselisihan antara karyawan dan manajer. Penerapan modul digital lembur memungkinkan pelacakan waktu kerja secara efisien, yang secara signifikan dapat menghilangkan proses manual yang memakan waktu \cite{abdelhalim2024tas}. Lebih dari sekadar efisiensi, sistem ini berperan krusial dalam memastikan kepatuhan terhadap peraturan ketenagakerjaan dan menghitung kompensasi lembur secara tepat dan transparan, yang seringkali menjadi fokus utama dalam perancangan sistem informasi \cite{researchgate2025overtime}. Dengan adanya alur kerja digital, proses pengajuan dan persetujuan lembur dapat dilakukan secara mandiri (\textit{self-service}), yang pada akhirnya meningkatkan pengalaman pegawai dan akuntabilitas manajerial.
 
 % Sistem ini dikembangkan menggunakan arsitektur PERN Stack (PostgreSQL, Express.js, React.js, Node.js). Pemilihan PostgreSQL didasarkan pada kemampuannya menangani relasi kompleks dan transaksi skala enterprise, sesuai dengan standar yang digunakan dalam pengembangan sistem informasi perusahaan modern \cite{arnold2019hrdbms}.
 
@@ -56,17 +59,17 @@ Secara khusus, maksud dari pelaksanaan kerja magang ini adalah:
 \begin{itemize}
     \item Mengimplementasikan pengetahuan yang telah diperoleh selama perkuliahan ke dalam lingkungan kerja profesional yang menerapkan standar industri.
     \item Mengasah keterampilan teknis dalam pengembangan sistem berbasis \textit{PERN stack} (PostgreSQL, Express.js, React, Node.js) serta kemampuan kolaborasi dalam tim lintas divisi.
-    \item Memahami proses kerja profesional dalam pengembangan dan pemeliharaan sistem backend yang terstruktur, terdokumentasi, dan terintegrasi dengan sistem lainnya.
+    \item Memahami proses kerja profesional dalam pengembangan dan pemeliharaan sistem \textit{backend} yang terstruktur, terdokumentasi, dan terintegrasi dengan sistem lainnya.
 \end{itemize}
 
-Adapun tujuan utama dari pelaksanaan kerja magang ini, yang difokuskan pada pengembangan sistem \textbf{NTS Payroll Module}, meliputi:
+Adapun tujuan utama dari pelaksanaan kerja magang ini, yang difokuskan pada pengembangan sistem NTS Payroll Module, meliputi:
 
 \begin{enumerate}
-    \item Mengembangkan dan menyempurnakan modul \textbf{Contract Management} untuk mendukung pembuatan serta penugasan kontrak kerja kepada karyawan secara efisien.
-    \item Merancang dan mengimplementasikan modul \textbf{Payslip Management} yang terintegrasi dengan modul \textbf{Daily Attendance}, sehingga proses perhitungan gaji dapat dilakukan secara otomatis berdasarkan data kehadiran.
-    \item Menyediakan fitur \textbf{pengurangan otomatis} terhadap ketidakhadiran tanpa keterangan (MIA) agar perhitungan penggajian menjadi lebih akurat dan transparan.
-    \item Meningkatkan \textbf{integrasi sistem} antara sisi backend dan frontend untuk memastikan alur data yang konsisten dan real-time.
-    \item Mengembangkan \textbf{API terstandarisasi} yang dapat digunakan oleh HR maupun karyawan untuk mengakses data penggajian secara aman dan terukur.
+    \item Mengembangkan dan menyempurnakan modul Contract Management untuk mendukung pembuatan serta penugasan kontrak kerja kepada karyawan secara efisien.
+    \item Merancang dan mengimplementasikan modul Payslip Management yang terintegrasi dengan modul Daily Attendance, sehingga proses perhitungan gaji dapat dilakukan secara otomatis berdasarkan data kehadiran.
+    \item Menyediakan fitur pengurangan otomatis terhadap ketidakhadiran tanpa keterangan (\textit{Missing in Action (MIA)}) agar perhitungan penggajian menjadi lebih akurat dan transparan.
+    \item Meningkatkan integrasi sistem antara sisi \textit{backend} dan \textit{frontend} untuk memastikan alur data yang konsisten dan real-time.
+    \item Mengembangkan Application Programming Interface (API) terstandarisasi yang dapat digunakan oleh HR maupun karyawan untuk mengakses data penggajian secara aman dan terukur.
 \end{enumerate}
 
 Dengan pencapaian tujuan-tujuan tersebut, diharapkan sistem NTS Payroll Module dapat menjadi fondasi penting dalam mendukung efisiensi operasional perusahaan serta meningkatkan transparansi dan akurasi dalam pengelolaan penggajian di PT Visi Karya Nusantara.
